@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Website with Bootstrap</title>
+    <!-- Added Bootstrap CDN for styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ensure full height for HTML and Body */
+        html, body {
+            height: 100%;
+        }
+
+        /* Flexbox layout for body */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Content area grows to fill the available space */
+        .content-wrapper {
+            flex: 1;
+        }
+
+        /* Footer remains at the bottom */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bootstrap navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Wrapper to control height -->
+    <div class="content-wrapper container my-4">
+        <div class="row">
+            <!-- Main content area, Bootstrap classes added for responsive grid -->
+            <div class="col-lg-8 col-md-7">
+                <h2>Main Content</h2>
+                <p>This is the main content section. It's now responsive and adjusts for all screen sizes.</p>
+                <!-- Added Bootstrap card component -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Card Example</h3>
+                        <p>This card now adjusts to the screen size automatically using Bootstrap's responsive card component.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar, Bootstrap column classes added for responsiveness -->
+            <div class="col-lg-4 col-md-5 bg-light p-3">
+                <h3>Sidebar</h3>
+                <p>This sidebar is now responsive and adjusts its size based on screen size.</p>
+                <!-- Responsive form using Bootstrap form classes -->
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer that stays at the bottom -->
+    <div class="footer container-fluid bg-dark text-white text-center p-2 mt-4">
+        <p>Footer Content © 2024</p>
+    </div>
+
+    <!-- Added Bootstrap JS CDN for components like navbar toggler -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
