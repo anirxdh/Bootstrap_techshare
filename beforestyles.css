@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.navbar {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+/* Fix width navbar that will break on mobile */
+.navbar a {
+    display: inline-block;
+    width: 150px; /* Fixed width which breaks in mobile */
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+    /* Fixed height and width layout */
+    height: 400px;
+}
+
+/* Fixed width main and sidebar */
+.main {
+    width: 70%; /* Fixed width - will break on smaller screens */
+    padding: 20px;
+    background-color: #f8f8f8;
+    height: 100%; /* Fixed height */
+    overflow-y: auto;
+}
+
+.sidebar {
+    width: 30%; /* Fixed width - will break on smaller screens */
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100%; /* Fixed height */
+    overflow-y: auto;
+}
+
+/* Non-responsive card */
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    width: 500px; /* Fixed width - breaks on mobile */
+}
+
+/* Footer with fixed positioning */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form that doesn't adjust on mobile */
+input[type="email"], input[type="password"] {
+    width: 400px; /* Fixed width - breaks on smaller screens */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+    
+ /* Ensure full height for HTML and Body */
+ html, body {
+    height: 100%;
+}
+
+/* Flexbox layout for body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content area grows to fill the available space */
+.content-wrapper {
+    flex: 1;
+}
+
+/* Footer remains at the bottom */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
