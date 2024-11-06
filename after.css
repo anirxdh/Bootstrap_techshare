@@ -1,0 +1,23 @@
+        /* Ensure full height for HTML and Body */
+        html, body {
+            height: 100%;
+        }
+
+        /* Flexbox layout for body */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Content area grows to fill the available space */
+        .content-wrapper {
+            flex: 1;
+        }
+
+        /* Footer remains at the bottom */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
