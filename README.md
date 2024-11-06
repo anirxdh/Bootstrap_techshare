@@ -42,11 +42,3 @@ In our codebase, we’ve used three HTML files to demonstrate Bootstrap’s impa
 ## Goal
 By the end of this session, you’ll be equipped to use Bootstrap confidently, applying its responsive layout features and pre-built components to create modern, interactive web pages.
 
-## Getting Started
-1. **Include Bootstrap**  
-   Add Bootstrap to your project by linking the CDN in your HTML file or installing it through npm.
-   ```html
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-
-2. **Explore the Examples**
-    Compare before.html with after.html to see how Bootstrap transforms the layout and styling. Experiment with the components in morefeatures.html to see how to add and customize elements.
